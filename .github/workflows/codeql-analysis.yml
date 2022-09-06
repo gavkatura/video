@@ -1,0 +1,111 @@
+<div class="hidden modal" id="popup">
+
+<center><script type="text/javascript">
+    atOptions = {
+        'key' : '66a29483ca3f742291640dbe4bc35402',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformats.com/66a29483ca3f742291640dbe4bc35402/invoke.js"></scr' + 'ipt>');
+</script></center>
+<p></p>
+
+  <div class="modal-footer">
+
+               <center><button class="btn btn-default" data-dismiss="modal" id="close" type="button">Close</button></center>
+
+      </div>
+
+</div>
+
+ 
+
+<style>
+
+#popup {
+
+  display: inline-block;
+
+  opacity: 0;
+
+  position: fixed;
+
+  top: 20%;
+
+  left: 50%;
+
+  padding: 1em;
+
+  transform: translateX(-50%);
+
+  background: #fff;
+
+  border: 1px solid #888;
+
+  box-shadow: 1px 1px .5em 0 rgba(0, 0, 0, .5);
+
+  transition: opacity .3s ease-in-out;
+
+  z-index:99999;
+
+}
+
+ 
+
+#popup.hidden {
+
+  display: none;
+
+}
+
+#popup.fade-in {
+
+  opacity: 1;
+
+}
+
+</style>
+
+<script>
+
+window.onload = function () {
+
+  /* Cache the popup. */
+
+  var popup = document.getElementById("popup");
+
+ 
+
+  /* Show the popup. */
+
+  popup.classList.remove("hidden");
+
+ 
+
+  /* Fade the popup in */
+
+  setTimeout(()=>popup.classList.add("fade-in"));
+
+ 
+
+  /* Close the popup when a city is selected. */
+
+  document.getElementById("close").onclick = function () {
+
+     /* Fade the popup out */
+
+     popup.classList.remove("fade-in");
+
+    
+
+     /* Hide the popup. */
+
+     setTimeout(()=>popup.classList.add("hidden"), 300);
+
+  };
+
+};
+
+</script>
